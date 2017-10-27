@@ -43,7 +43,7 @@ class Station(PointCollection):
     def get_unique_members(self):
         all_members = (m for m in (e.members for e in self.elements))
 
-        keys = ["name", "description", "standard", "unit"]
+        keys = ["name", "description", "standard", "unit","datum"]
         mwhat = []
         for mg in all_members:
             for m in mg:
